@@ -1,0 +1,59 @@
+DS Metronome TODO:
+
+2-Ene-2009 (Importance / Hardness / Time)
+- ( hi/low/med)		Publish
+
+- ( hi/ med/ hi)	Training window
+
+- (med/low/low)		Save message
+- (med/ low/ med)	Help Screen ?? Put an "?" icon into one of the GUIs.
+- (med/ low/ med)	About box: Possibly use help screen to show aboutbox...
+
+- (med/ med/ hi)	Instrument Setup: Vol / Pan / Vol Randomness / Pan Randomness
+- (low/ low/ hi)	Left Hand support ?? (invert shift key) -> Needs a GUI to select this option!!!
+
+x (med/med)			Tap Tempo
+x ( hi/med)			1/4 2/4 3/4 tempos
+x					Simulate MouseLeft / MouseRight with shift key (Shift Pressed = LeftTrigger key)
+
+x (med/low)			Change Application Icons
+x (med/low)			Show something when metronome is inactive.
+x ( hi/med/med)		Get New Free (Open Source) Drum Samples.
+					DONE: Finally I recorded my own instrument set.
+x ( hi/low/med)		Check best sound sample format (sample rate)
+					DONE: 44100 16 bit
+
+x ( hi/low/low)		Test the current result!!!!
+
+8-Ene-2009
+x ( hi/low/med)		Cambiar el Ride por otro sonido más versátil. Por ejemplo las baquetas (Sticks)
+					Típica para metrónomo.
+					DONE: 10-Ene-2009. Grabado por mi mismo con el micro.
+					
+9-Ene-2009
+x ( med/low/low)	Poner acento en mi apellido en la ventana del metrónomo.
+					DONE: 10-Ene-2009
+x ( med/low/low)	Añadir ayuda (información) sobre los cursores digitales.
+x ( med/low/low)    Falta ayuda que comente salvar los settings.		
+x ( med/low/low)	Añadir feedback audio al pulsar en zonas sensibles (click)
+					DONE: 10-Ene-2009.
+
+19-Ene-2009			Añadir visual cue al metronome. Siscu propone una nueva pantalla que sirva únicamente para eso.
+					La idea es interesante pues no marranea el resto de la interfaz y permite hacer una visual cue
+					estupenda.
+
+					Añadir un visual queue, que muestre a cada momento qué columna es la que se está reproduciendo.
+					3 colores uno para cuando el beat no es el activo, otro para cuando es el activo pero no el principal
+					y otro cuando es el principal.
+
+					Otro posible visual cue es un circulo que se va rellenando y alcanza el máximo en el beat principal.
+
+					Hacer que Start sea instántaneo. Ahora start salva el contenido. Al salvar el contenido el comienzo
+					se demora ligeramente, por lo que es más complicado sincronizarse al instante.
+
+					Ergonomía. Select swap screens, start, save, A instant play, XY, wait for beat, (1,2,3,4 start!).
+
+					Lionel sugiere: Añadir información rápida para B, A, XY en una linea inferior. O también hacerlo en ciclo.
+					primero A es para start, luego B es para tapping, XY es para wait for beat.
+
+					Wait for beat, es decir, reproducir el sonido de los sticks antes de comenzar el ritmo real del metrónomo.

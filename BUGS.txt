@@ -1,0 +1,40 @@
+BUGS:
+
+2-Ene-2009
+	x Saving doesn't work properly
+	PA_ Saving functions doesn't work properly... SRAM only works for GBA cartdriges not DS ones
+	standar file functions should work. in DS Linker I have to DLDI patch the rom (?)
+		14-Ene-2009 DONE: faltaba inicializar el sistema FAT para poder guardar. No es necesario
+		parchear con DLDI.
+
+	x Algunas veces los sonidos no se escuchan. Si un sonido es largo, y se reproduce antes de haber acabado,
+	la segunda vez no suena.
+		4-Ene-2009
+		DONE: aunque dejo el control en manos del sistema de la PA_Lib
+	
+	x El volumen de los sonidos es relativamente bajo.
+		DONE: Aumentado por código, Normalizado por datos, y en el caso del Bassdrum amplificado 3dBs.
+	
+	x El primer beat no tiene un tiempo incorrecto. es ligeramente más rápido que el resto. Para comprobarlo
+	pulsar START varias veces (start/stop metronome)
+		14-Ene-2009 DONE: 
+		En el No$GBA no pasa. La version no obstante ha cambiado mucho. es posible que se haya corregido por otro
+		lado. Tampoco pasa en DesMuMe ahora.
+		En la DS si que pasa, y es debido a que la funcion SaveDATA es relativamente lenta, y afecta al delta del 
+		siguiente frame
+
+11-Ene-2009
+	x Página 14 tiene solo el indicador de página siguiente, no el de previa...
+	x Falta punto en here begins the metronome sequencer ...
+	x Solo detectar cursor down en help, en el area negra...
+		DONE:
+	
+13-Ene-2009
+	x El icono On/Off no se muestra al encender/apagar el metronomo. Hay que cambiar de pantalla
+	 para poder observar el nuevo resultado.
+		 14-Ene-2009 DONE: Problemas con el indice al array de GUI accedidas indevidamente. el indice se 
+		 utilizaba con UPPERSCREEN en vez de globals.m_iScreenGUIs[UPPERSCREEN]. Lo mismo con el LOWERSCREEN
+		 
+19-Ene-2009
+	En DSOrganizer las lineas que describen el juego aparecen como TEXT1,TEXT2,TEXT3.
+	El tempo del metronomo no es correcto. a 59 BPMs concuerda con un metrónomo puesto a 60 BPMs.

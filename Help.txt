@@ -1,0 +1,36 @@
+Basic Usage:
+- This is the Sequencer:
+- Every row represents the function of an element of a basic drum kit.
+- The first cell of every row contains the drum kit element's name. It's the most bigger cell in the row.
+- Below the drum kit elememnt name there is a line representing the main volume of that. You can change it
+  by pressing with the stylus on that big cell. The most left you press the less volume this element will have.
+  The most rigth on that cell, the most volume.
+  
+- Every other cell in that row represents wether the instrument at this row will be played or not when the 
+  sequencer cursor passes over the cell's column. If it's activated the sound will be played. If it's not 
+  activated no sound will be played when cursor is over it's column.
+- Press with the stylus on a cell to activate or deactivate it.
+
+// - The sound system add's a 10% of dynamics to the sounds. This means that sound volume of a given drum kit 
+// element vary around 10% of main volume. The same applies for panning.
+
+- Metronome:
+- Press with the stylus in the digits that represent the current BPMs to change them. Pressing in the units 
+  will change the BPMs 1 unit at a time. Pressing on the tenths will chagne the BPMs 10 units at a time. 
+  Pressing on the cents...
+- Increasing digits is performed by pressing over them with the stylus. Decreasing digits is performed by
+holding the L button and pressing over them.
+- BPM range is comprissed between 40 and 250 BPMs.
+- You can change the time signature also pressing on the numerator of the signature. Works like BPMs. 
+Increase by using the stylus, decrease by holding L button and using the stylus.
+- Valid Time Signatures are 4/4, 3/4, 2/4 and 1/4.
+- You can tap a tempo by pressing the B button for at least 4 times, at the rythm of what ever you want.
+Start tapping a tempo produces the metronome to be stoped, in order to avoid confusion / craziness :)
+
+- Press start button to stop / start the metronome function. You always see an icon in the display telling
+wether the metronome is active or not. 
+- Pressing start, also saves current values and the layout of the sequencer, in order to be restored the 
+next time you launch the metronome.
+
+David Márquez de la Cruz (c) 2009
+
